@@ -1,11 +1,13 @@
-import { Video } from './components/Video'
-import { Sidebar } from './components/Sidebar'
+import Video from './components/Video'
+import Sidebar from './components/Sidebar'
+
+
 
 function App() {
   return (
     <div className="App">
-      <Video/>
-      <Sidebar/>
+        <Video/>
+        <Sidebar/>
     </div>
   );
 }
