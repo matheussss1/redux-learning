@@ -20,7 +20,14 @@ const INITIAL_STATE = {
 }
 
 export default function video(state=INITIAL_STATE, action) {
-    return {
-        ...state
+    switch(action.type) {
+        case 'TOGGLE_VIDEO':
+            return {
+                ...state, activeVideo: action.id
+            }
+        default:
+            return {
+                ...state
+            }
     }
 }

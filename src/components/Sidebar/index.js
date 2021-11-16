@@ -1,11 +1,13 @@
 import { connect } from "react-redux"
 
-const Sidebar = ({videos}) => {
+import { toggleVideo } from "../../store/actions/video"
+
+const Sidebar = ({videos, dispatch}) => {
     return (
         <aside>
             <ul>
                 {videos.map(video => 
-                    <li key={video.id}>
+                    <li key={video.id} onClick={() => dispatch(toggleVideo(video.id))}>
                         <h2>{video.title}</h2>
                         <span>{video.likes} likes</span>
                     </li>

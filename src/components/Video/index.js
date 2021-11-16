@@ -1,5 +1,6 @@
 import { connect } from "react-redux"
 
+
 const Video = ({activeVideo}) => {
     return activeVideo?
         <h1>Vídeo ativo: {activeVideo}</h1>
