@@ -1,6 +1,6 @@
-export const toggleVideo = (id) => {
+export const toggleVideo = (title) => {
     return {
         type: "TOGGLE_VIDEO",
-        id
+        title
     }
 }; 

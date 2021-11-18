@@ -13,8 +13,18 @@ const INITIAL_STATE = {
         },
         {
             id: 3,
-            title: 'Como ser sênior',
-            likes: 1250
+            title: 'Como implementar o Muller flow',
+            likes: 9999
+        },
+        {
+            id: 4,
+            title: 'POZE DO RODO PROGRAMA EM PHP?',
+            likes: 250
+        },
+        {
+            id: 5,
+            title: 'Marcelo ta casado com aquela mina?',
+            likes: 71250
         }
     ]
 }
@@ -23,7 +33,7 @@ export default function video(state=INITIAL_STATE, action) {
     switch(action.type) {
         case 'TOGGLE_VIDEO':
             return {
-                ...state, activeVideo: action.id
+                ...state, activeVideo: action.title
             }
         default:
             return {

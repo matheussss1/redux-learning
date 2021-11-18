@@ -1,0 +1,17 @@
+.sidebar {
+    background-color: lightcoral;
+    padding: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.sidebar li:hover {
+    background-color: rgba(0,0,0,.2);
+}

@@ -1,11 +1,15 @@
 import { connect } from "react-redux"
-
+import './style.css'
 
 const Video = ({activeVideo}) => {
-    return activeVideo?
-        <h1>Vídeo ativo: {activeVideo}</h1>
-        :
-        <h1>Selecione um vídeo para assistir:</h1>;
+    return (
+        <div className="video-container">
+            {activeVideo?
+            <h1>Vídeo ativo: {activeVideo}</h1>
+            :
+            <h1>Nenhum vídeo selecionado</h1>}
+        </div>
+    )
 }
 
 const mapStateToProps = state => ({activeVideo : state.video.activeVideo});
